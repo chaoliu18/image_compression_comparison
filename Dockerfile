@@ -109,7 +109,7 @@ RUN git clone -b release https://github.com/ninja-build/ninja.git && \
 # AVIFENC
 RUN mkdir -p /tools && \
     cd /tools && \
-    git clone https://github.com/AOMediaCodec/libavif && \
+    git clone https://github.com/chaoliu18/libavif && \
     cd /tools/libavif/ext && \
     $SHELL ./aom.cmd && \
     cd /tools/libavif && \
@@ -357,7 +357,7 @@ RUN \
 # LIBAOM
 RUN mkdir -p /tools && \
     cd /tools && \
-    git clone https://aomedia.googlesource.com/aom && \
+    git clone https://github.com/Provissy/aom && \
     cd aom && \
     mkdir _build && cd _build && \
     cmake .. && \
